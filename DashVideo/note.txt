@@ -21,3 +21,72 @@ https://127.0.0.1/dash/MP4Box/manifest.mpd
 https://127.0.0.1/ReferenceApplication-master/tools/sharp/Dash/manifest.mpd
 
 https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:00000000-0000-0000-0000-000000000001,sl:2000,persist:false,contentkey:AAAAAAAAAAAAAAAAAAAAAQ==),(kid:00000000-0000-0000-0000-000000000002,sl:2000,persist:false,contentkey:AAAAAAAAAAAAAAAAAAAAAg==)
+
+
+{
+  "created": "2023-06-02T16:23:26Z",
+  "Test1234": {
+    "kid.0": "00000000000000000000000000000001",
+    "key.0": "00000000000000000000000000000001",
+    "sl.0": "2000",
+    "b64kid.0": "AAAAAAAAAAAAAAAAAAAAAQ==",
+    "b64key.0": "AAAAAAAAAAAAAAAAAAAAAQ==",
+    "algid": "CENC",
+    "playready": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,sl:2000,persist:false,contentkey:AAAAAAAAAAAAAAAAAAAAAQ==)"
+  },
+  "Test1235": {
+    "kid.0": "00000000000000000000000000000002",
+    "key.0": "00000000000000000000000000000002",
+    "sl.0": "2000",
+    "b64kid.0": "AAAAAAAAAAAAAAAAAAAAAg==",
+    "b64key.0": "AAAAAAAAAAAAAAAAAAAAAg==",
+    "algid": "CENC",
+    "playready": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,sl:2000,persist:false,contentkey:AAAAAAAAAAAAAAAAAAAAAg==)"
+  },
+  "Test1236": {
+    "kid.0": "c14f0709f2b94427916b61b52586506a",
+    "key.0": "edfb17797247b3c7a74344847e485305",
+    "sl.0": "2000",
+    "b64kid.0": "wU8HCfK5RCeRa2G1JYZQag==",
+    "b64key.0": "7fsXeXJHs8enQ0SEfkhTBQ==",
+    "algid": "CENC",
+    "playready": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,sl:2000,persist:false,contentkey:7fsXeXJHs8enQ0SEfkhTBQ==)"
+  },
+  "Test1237": {
+    "kid.0": "914e69f40ab345349e9f9853615e26f6",
+    "key.0": "d0306595460449ce5675224c79baa504",
+    "sl.0": "2000",
+    "b64kid.0": "kU5p9AqzRTSen5hTYV4m9g==",
+    "b64key.0": "0DBllUYESc5WdSJMebqlBA==",
+    "algid": "CENC",
+    "playready": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:header,sl:2000,persist:false,contentkey:0DBllUYESc5WdSJMebqlBA==)"
+  },
+  "Test12341235": {
+    "kid.0": "00000000000000000000000000000002",
+    "key.0": "00000000000000000000000000000002",
+    "sl.0": "2000",
+    "b64kid.0": "AAAAAAAAAAAAAAAAAAAAAg==",
+    "b64key.0": "AAAAAAAAAAAAAAAAAAAAAg==",
+    "kid.1": "00000000000000000000000000000001",
+    "key.1": "00000000000000000000000000000001",
+    "sl.1": "2000",
+    "b64kid.1": "AAAAAAAAAAAAAAAAAAAAAQ==",
+    "b64key.1": "AAAAAAAAAAAAAAAAAAAAAQ==",
+    "algid": "CENC",
+    "playready": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:00000000-0000-0000-0000-000000000002,sl:2000,persist:false,contentkey:AAAAAAAAAAAAAAAAAAAAAg==),(kid:00000000-0000-0000-0000-000000000001,sl:2000,persist:false,contentkey:AAAAAAAAAAAAAAAAAAAAAQ==)"
+  },
+  "Test12371236_7": {
+    "kid.0": "914e69f40ab345349e9f9853615e26f6",
+    "key.0": "d0306595460449ce5675224c79baa504",
+    "sl.0": "2000",
+    "b64kid.0": "kU5p9AqzRTSen5hTYV4m9g==",
+    "b64key.0": "0DBllUYESc5WdSJMebqlBA==",
+    "kid.1": "c14f0709f2b94427916b61b52586506a",
+    "key.1": "edfb17797247b3c7a74344847e485305",
+    "sl.1": "2000",
+    "b64kid.1": "wU8HCfK5RCeRa2G1JYZQag==",
+    "b64key.1": "7fsXeXJHs8enQ0SEfkhTBQ==",
+    "algid": "CENC",
+    "playready": "https://test.playready.microsoft.com/service/rightsmanager.asmx?cfg=(kid:914e69f4-0ab3-4534-9e9f-9853615e26f6,sl:2000,persist:false,contentkey:0DBllUYESc5WdSJMebqlBA==),(kid:c14f0709-f2b9-4427-916b-61b52586506a,sl:2000,persist:false,contentkey:7fsXeXJHs8enQ0SEfkhTBQ==)"
+  }
+}

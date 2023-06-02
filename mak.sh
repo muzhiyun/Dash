@@ -1,4 +1,7 @@
-rm -rf DashVideo
+rm -rf DashVideo/Video1
+rm -rf DashVideo/Video2
+rm -rf DashVideo/Both
+rm TempVideo/*
 
 ./ffmpeg -hide_banner -nostats -ignore_unknown -fflags +discardcorrupt -analyzeduration 600000000 -probesize 600000000 -i test.mp4 -threads 4 -preset fast -c:v libx264 -crf 23 -profile:v main -level 3.0 -maxrate:v 1500k -bufsize:v 3000k -pix_fmt yuv420p -r 24 -refs 3 -bf 3 -g 48 -keyint_min 24 -b_strategy 1 -flags +cgop -sc_threshold 0 -movflags negative_cts_offsets+faststart -vf "drawtext=fontfile=Roboto-Regular.ttf:fontcolor=White:fontsize=38:alpha=0.5:box=1:boxborderw=4:boxcolor=black:x=(w-text_w)/2:y=text_h-line_h+60:text='H264 1280x720 1500k 8s \ ':timecode='00\:00\:00\:00':rate=24,drawtext=fontfile=Roboto-Regular.ttf:fontcolor=White:fontsize=38:alpha=0.5:box=1:boxborderw=4:boxcolor=black:x=(w-text_w)/2:y=text_h-line_h+98:text='24fps 48gop frame\:\ %{frame_num}':start_number=1,scale=1280x720:out_range=tv:out_color_matrix=bt709:flags=full_chroma_int+accurate_rnd,format=yuv420p,setsar=1/1" -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -an -sn -y TempVideo/temp_720p.mp4
 
